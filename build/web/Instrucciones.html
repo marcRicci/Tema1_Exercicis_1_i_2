@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<title>Lunar Lander</title>
+ 		<meta charset="UTF-8">
+ 		<meta name="description" content="Instrucciones del juego Lunar Lander">
+ 		<meta name="keywords" content="Instrucciones, Lunar, Lander">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<link rel='stylesheet' media='screen and (min-width: 961px)' href='css/d.css'>
+ 		<link rel='stylesheet' media='screen and (max-width: 960px)' href='css/m.css'>
+ 		<script src="js/js.js"></script>
+	</head>
+	<body>
+		<div id="nave">
+ 			<img id="naves" src="img/nave_sin_fuego.png" alt="imagenes_naves">
+ 		</div>
+ 		<div class="a">
+ 			<div id="marcadores">
+				 <ul id="cpanel">
+  					<li>
+  					-Fuel- 
+  						<span id="fuel">
+  						100 
+  				    	</span>L 
+					</li>
+  					<li>
+  					-Altura- 
+  						<span id="altura">
+  						70 
+  						</span> m
+  					</li>
+  					<li>
+  					-Intentos fallidos- 
+  						<span id="intentos">
+  						0
+  						</span>
+  					</li>
+  					<li>
+  						-Velocidad- 
+  						<span id="velocidad">
+  						100 
+  						</span> m/s
+  					</li>
+ 				</ul>
+			</div>
+ 		</div>
+ 		<div class="b">
+			<div id="alien">
+				<img src="img/Alienigena.png" alt="img_alien">
+			</div>
+ 		 	<div id="instrucciones">
+ 				<h2>Instrucciones del juego</h2>
+				<p>La nave empieza en suspensión y va cayendo cada vez más rápido hacía la luna,
+				para evitar accidentarse a causa de un choque fatal contra la luna se tendrá que presionar el espacio o el botón de acelerar en la versión móvil.En el caso de que no se acelere lo suficiente o se termine el combustible antes de aterrizar la nave se estrellará.
+				</p>
+				<p>
+				Existen dos botones principales : El de pausa que lleva a las opciones y el de reiniciar que reinicia el juego.
+				</p>
+				<p>
+				En el menú de principal existen 4 botones: para continuar la partida, about, instrucciones y cambiar dificultad.
+				</p>
+				<p>Apretar el alien para encender el motor en la versión móvil y mantener presionada cualquier tecla en la versión de escritorio</p>
+				<a href="index.html">
+					<div class="boton_volver">
+					Volver
+					</div>
+				</a>
+ 			</div>
+ 			<div id="barraFuel">
+				<img id="barra_fuel_img" src="img/barra_fuel.png" alt="barra_fuel_img">
+				<img id="movimiento" src="img/barra_fuel_1.png" alt="barra_fuel_estática">
+			</div>
+			<div id="cuentakilometros">
+				<img id="cuentakilometros_img" src="img/medidor_velocidad.png" alt="imagen_cuentakilometros">
+				<img id="aguja" src="img/aguja_velocidad.png" alt="image_aguja_velocidad">
+			</div>
+ 		</div>
+ 		<div class="c">
+			<div id="botonera">
+ 				<img id="reiniciar_img" src="img/boton_reiniciar.png" alt="botón_reiniciar">
+ 				<img id="pausa_img" src="img/boton_pause.png" alt="botón_pausa">
+ 			</div>
+ 			<div id="invisible">
+            </div>
+ 		</div>
+ 		<div class="d">
+ 			<img src="img/luna.jpg" alt="img_luna">
+ 		</div>
+	</body>
+</html>

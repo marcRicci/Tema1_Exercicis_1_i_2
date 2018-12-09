@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ 		<title>Lunar Lander</title>
+                
+ 		<meta charset="UTF-8">
+ 		<meta name="description" content="Juego multidispositivo consistente en una nave que aterriza en la luna">
+ 		<meta name="keyowords" content="Lunar, Lander, Nave, Espacio, Luna"> 
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<link rel='stylesheet' media='screen and (min-width: 961px)' href='css/d.css'>
+ 		<link rel='stylesheet' media='screen and (max-width: 960px)' href='css/m.css'>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="js/js.js"></script>
+                <script>
+                    /*$(document).ready(function () {
+                        var emess="Error desconocido";
+                        var dif=2;
+                        $.ajax({
+                            type:"POST",
+                            url: "GetDatos",
+                            dataType:"json",
+                            data:{dificultad:dif},
+                            success: function(u){
+                                alert(u["mess"]);
+                            },
+                            error: function(e){
+                                if (e["responseJSON"]===undefined) alert(emess);
+                                else alert(e["responseJSON"]["error"]);
+                            }
+                        });
+                    });*/
+                    
+                </script>
+                
+	</head>
+	<body>
+		<div id="nave">
+ 			<img id="naves" src="img/nave_sin_fuego" alt="imágenes_naves">
+ 		</div>
+ 		<div id="marcadores">
+			<ul id="cpanel">
+  				<li>
+  				-Fuel-
+  					<span id="fuel">
+  					100 
+  					</span> L
+				</li>
+  				<li>
+  				-Altura-
+  					<span id="altura">
+  					70 
+  					</span> m
+  				</li>
+  				<li>
+  				-Intentos fallidos- 
+  					<span id="intentos">
+  					0
+  					</span>
+  				</li>
+  				<li>
+  				-Velocidad- 
+  					<span id="velocidad">
+  					100 
+  					</span> m/s
+  				</li>
+ 			</ul>
+		</div>
+ 		<div class="b">
+ 			<div id="pantallaVictoria">
+ 			<h2>Enhorabuena has aterrizado con éxito.</h2>
+ 			<h4>Tu velocidad de aterrizaje ha sido de : 
+ 				<span id="vImpacto">
+ 				0 
+ 				</span> m/s
+ 			</h4>	
+ 			</div>
+ 			<div id="pantallaDerrota">
+ 			<h2>Lamentablemente tu nave se ha estrellado.</h2>
+ 			<h4>Tu velocidad de aterrizaje ha sido de : 
+ 				<span id="vImpacto2">
+ 				0 
+ 				</span> m/s
+ 			</h4>	
+ 			</div>
+			<div id="alien">
+				<img id="alienigena" src="img/Alienigena.png" alt="img_Alienigena">
+			</div>
+			<div id="alien_invisible">
+			</div>
+ 			<div id="menu">
+ 				<h3>Menú Lunar Lander</h3>
+ 				<div id="Continuar">
+ 				Continuar
+ 				</div>
+ 				<div id="About">
+ 				About
+ 				</div>
+ 				<div id="Instrucciones">
+ 				Instrucciones
+ 				</div>
+ 				<div id="Dificultad">
+ 				Dificultad
+ 				</div>
+ 			</div>
+ 			<div id="menuDificultad">
+ 				<h3>Menú dificultad</h3>
+ 				<div id="Facil">
+ 			  	Fácil, V impacto= 5 m/s
+ 				</div>
+ 				<div id="Normal">
+ 			  	Normal, V impacto= 3 m/s
+ 				</div>
+ 				<div id="Dificil">
+ 			  	Difícil, V impacto= 1 m/s
+ 				</div>
+ 				<div id="volver" class="boton_volver">
+ 				Volver
+ 				</div>
+ 			</div>
+ 			<div id="barraFuel">
+				<img id="barra_fuel_img" src="img/barra_fuel.png" alt="barra_fuel_img">
+				<img id="movimiento" src="img/barra_fuel_1.png" alt="barra_fuel_estática">
+			</div>
+			<div id="cuentakilometros">
+				<img id="cuentakilometros_img" src="img/medidor_velocidad.png" alt="imagen_cuentakilometros">
+				<img id="aguja" src="img/aguja_velocidad.png" alt="image_aguja_velocidad">
+			</div>
+ 		</div>
+ 		<div class="c">
+			<div id="botonera">
+ 				<img id="reiniciar_img" src="img/boton_reiniciar.png" alt="botón_reiniciar">
+ 				<img id="pausa_img" src="img/boton_pause.png" alt="botón_pausa">
+ 			</div>
+ 			<div id="invisible">
+            </div>
+ 		</div>
+ 		<div class="d">
+ 			<img src="img/luna.jpg" alt="img_luna">
+ 		</div>
+	</body>
+</html>
